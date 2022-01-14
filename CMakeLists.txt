@@ -52,6 +52,12 @@ option(BUILD_SHARED_LIBS "Build Shared Libraries" OFF)
 
 
 ######################################################################
+# Setup Testing (dashboards etc.).
+######################################################################
+include(mpSetupTesting) # needed for ctest configuration
+
+
+######################################################################
 # Choose C++ standard. Currently 17
 ######################################################################
 set(MYPROJECT_CXX_STANDARD 17)
